@@ -1,5 +1,4 @@
 <?php
-
 $nombre1 = "Paco";
 $nombre2 = "Miguel";
 $apellido1 = "Torres";
@@ -29,5 +28,4 @@ foreach ( $array as $r ) {
 }
 $s .= '</table>';
 echo $s;
-
 ?>
