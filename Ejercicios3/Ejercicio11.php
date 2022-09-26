@@ -12,7 +12,11 @@ $array =
     ];
 
 print_r($array);
-print_r(avg($array));
+echo '<br><br>Suma: ';
+print_r(array_sum($array));
+echo '<br><br>Media: ';
+print_r(array_sum($array)/count($array));
+
 
 
 ?>
