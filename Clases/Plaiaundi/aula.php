@@ -1,5 +1,5 @@
 <?php
-class Aula extends espacios{
+class Aula extends espacio{
     private $numero="";
     private $proyector=false;
     private $pizarraDigital=false;
@@ -47,7 +47,13 @@ class Aula extends espacios{
         $this->pantallaTactil = $pantallaTactil;
     }
     
-    
+    public function construct($puntuWifi,$puntosRed,$numero,$proyector,$pizarraDigital,$pantallaTactil) {
+        parent::construct;
+        $this->numero = $numero;
+        $this->proyector = $proyector;
+        $this->pizarraDigital = $pizarraDigital;
+        $this->pantallaTactil = $pantallaTactil;
+    }
 }
 
 ?>

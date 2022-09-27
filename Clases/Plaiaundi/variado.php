@@ -1,5 +1,5 @@
 <?php
-class Variado extends espacios{
+class Variado extends espacio{
     private $tipo="";
     
     public function setTipo($nombre) {
@@ -10,4 +10,9 @@ class Variado extends espacios{
         return $this->tipo;
     }
     
+    public function construct($puntuWifi,$puntosRed,$tipo) {
+        parent::construct;
+        $this->tipo = $tipo;
+    }
 }
+?>
