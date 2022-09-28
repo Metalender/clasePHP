@@ -27,7 +27,7 @@ public function getDNI() {
 public function getEmail() {
     return $this->email;
 }
-public function construct($nombre,$dni,$email) {
+public function __construct($nombre,$dni,$email) {
     $this->nombre = $nombre;
     $this->dni = $dni;
     $this->email = $email;

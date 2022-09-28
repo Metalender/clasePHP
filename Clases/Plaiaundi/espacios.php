@@ -28,7 +28,7 @@ abstract class espacio{
         return $this->puntuWifi;
     }
     
-    public function construct($puntuWifi,$puntosRed) {
+    public function __construct($puntuWifi,$puntosRed) {
         $this->puntusWifi = $puntusWifi;
         $this->puntosRed = $puntosRed;
     }

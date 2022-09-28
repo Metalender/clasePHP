@@ -1,6 +1,7 @@
 <?php
 class despacho extends espacio{
     private $nombre="";
+    private array $ordenadores;
     
     public function setNombre($nombre) {
         $this->nombre = $nombre;
@@ -9,7 +10,7 @@ class despacho extends espacio{
     public function getNombre() {
         return $this->nombre;
     }
-    public function construct($puntuWifi,$puntosRed,$nombre) {
+    public function __construct($puntuWifi,$puntosRed,$nombre) {
         parent::construct;
         $this->nombre = $nombre;
     }

@@ -21,7 +21,7 @@ class alumno extends persona{
         return $this->ciclo;
     }
     
-    public function construct($nombre,$dni,$email,$codMatricula,$ciclo) {
+    public function __construct($nombre,$dni,$email,$codMatricula,$ciclo) {
         parent::construct;
         $this->codMatricula = $codMatricula;
         $this->ciclo = $ciclo;

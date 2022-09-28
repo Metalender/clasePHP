@@ -10,7 +10,7 @@ class Variado extends espacio{
         return $this->tipo;
     }
     
-    public function construct($puntuWifi,$puntosRed,$tipo) {
+    public function __construct($puntuWifi,$puntosRed,$tipo) {
         parent::construct;
         $this->tipo = $tipo;
     }

@@ -10,7 +10,7 @@ class docente extends persona{
         return $this->sueldo;
     }
     
-    public function construct($nombre,$dni,$email,$sueldo) {
+    public function __construct($nombre,$dni,$email,$sueldo) {
         parent::construct;
         $this->sueldo = $sueldo;
     }

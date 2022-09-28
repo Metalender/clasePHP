@@ -47,7 +47,7 @@ class Aula extends espacio{
         $this->pantallaTactil = $pantallaTactil;
     }
     
-    public function construct($puntuWifi,$puntosRed,$numero,$proyector,$pizarraDigital,$pantallaTactil) {
+    public function __construct($puntuWifi,$puntosRed,$numero,$proyector,$pizarraDigital,$pantallaTactil) {
         parent::construct;
         $this->numero = $numero;
         $this->proyector = $proyector;

@@ -19,7 +19,7 @@ class CentroFP {
         return $this->nombre;
     }
     
-    public function construct($cod,$nombre) {
+    public function __construct($cod,$nombre) {
         $this->cod = $cod;
         $this->nombre = $nombre;
     }
