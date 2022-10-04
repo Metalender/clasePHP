@@ -43,9 +43,23 @@ class ordenador {
     }
     
     public function toString(){
-        return "<h1>".$this->SO."</h1>"
+        echo "<h1>".$this->SO."</h1>"
             ."<h2>".$this->codHZ."</h2>"
-                .($this->esSobremesa ?"<h3 style='color:green'>VERDADERO</h3>" :"<h3 style='color:red'>FALSO</h3>");;
+                .($this->esSobremesa ?"<h3>Sobremesa</h3>" :"<h3>Portátil</h3>");
+    }
+    
+    public static function guardarSerializado($nombreFichero, $ordenadorArray){
+        // guardar coches en archivo
+        $s = serialize($ordenadorArray);
+        // almacenamos $s en algún lugar en el que page2.php puede encontrarlo.
+        file_put_contents($nombreFichero, $s);
+    }
+    
+    public static function getOrdenadoresUnselizados($nombreFichero){
+        
+        $s = file_get_contents($nombreFichero);
+        $ordenadorArray = unserialize($s);
+        return $ordenadorArray;
     }
 }
 ?>
