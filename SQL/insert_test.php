@@ -1,4 +1,3 @@
-
 <?php
 if (isset($_GET['id']) && isset($_GET['nombre'])) {
     $id= $_GET['id'];
@@ -34,8 +33,5 @@ if (isset($_GET['id']) && isset($_GET['nombre'])) {
     echo("<br>Error en parametros<br>");
     
 }
-
-
-
 ?>
 

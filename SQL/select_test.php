@@ -1,4 +1,3 @@
-
 <?php
 $mysqli = new mysqli("localhost", "root", "", "test");
 if ($mysqli->connect_errno) {
@@ -6,11 +5,11 @@ if ($mysqli->connect_errno) {
 }
 
 /* Sentencia no preparada */
-$resultado = $mysqli->query("SELECT * FROM test");
+$resultado = $mysqli->query("SELECT * FROM alumnos");
 
 // mostrar resultado
 while ($row = $resultado->fetch_assoc()) {
-    echo($row['id'] . " - " . $row['nombre']);
+    echo($row['dni'] . " - " . $row['nombre']);
     
     //printf("%s - %s\n", $row["id"], $row["nombre"]);
     echo "<br>";
@@ -21,4 +20,3 @@ while ($row = $resultado->fetch_assoc()) {
 $mysqli->close();
 
 ?>
-
